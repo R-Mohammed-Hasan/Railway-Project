@@ -4,32 +4,87 @@
 </head>
 <style>
 body{
-  background-image:url('../html images/login.jpeg');
+  background-image:url('html images/login.jpeg');
   background-repeat:no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
-a:link{
+#signup{
+  animation: mymove 2s infinite;
+}
+@keyframes mymove{
+  50%{font:20px bold}
+}
+#forgot,#signup:link{
+  color:blue;
+}
+#forgot:hover{
+    border:2px solid black;
+    background: white;
+    color:red;
+  }
+#signup:hover{
+  border:2px solid black;
+  background: white;
   color:red;
 }
-a:hover{
-  color:red;
-
+input[type=email]{
+  width:200px;
+  transition: width 2s;
+}
+input{
+  border-radius: 15px;
+}
+input[type=number]{
+  width:200px;
+  transition: width 2s;
+}
+input[type=password]{
+  width:200px;
+  transition: width 2s;
+}
+input[type=email]:hover{
+  width:300px;
+}
+input[type=password]:hover{
+  width:300px;
+}
+input[type=number]:hover{
+  width:300px;
 }
 </style>
   <body align="center">
-    <h1 color:'white'> Login Page</h1><hr color="black"><br>
-    <img src="../html images/lin.jpg" height=120 width= 300 alt="Login"></center><br><br><br><br><br><br>
-  <table align="center" border="4" height="150" style="background-color:white">
-      <form>
-
-    <tr><th>  E-mail Id: </th> <td> <input type="email" name="mail id" placeholder="Your mailid eg.abcd@gmail.com"></td></tr><br>
-    <tr><th>Password:   </th><td> <input type="password" name="password" placeholder="Password"></td></tr>
-    <tr><th>Phone number:   </th><td><input type="number" name='number' placeholder="Your Contact number" </td></tr>
-  </table><br>
-  <br><span style="border:5px solid black"><a href="rail.html"><input type="button" name="button" value="Submit" ></a></span><br><br>
-
-    </form>
-   </table>
-    </body>
+    <h1 color:'white'> Login Page</h1>
+    <hr color="black"><br>
+    <img src="html images/login.jpg" height=150 width= 150 alt="Login" style="border-radius:15px;">
+    <br><br><br>
+  <form action="./rail.html">
+     <table align="center" border="4" height="150px" width='500px' style="background-color:white">
+       <tr>
+         <th>  E-mail Id: </th>
+         <td> <input type="email" name="mail id" placeholder="Your mailid eg.abcd@gmail.com" required></td>
+       </tr><br>
+       <tr>
+         <th>Password:   </th>
+         <td> <input type="password" name="password" placeholder="Password" required></td>
+       </tr>
+       <tr>
+         <th>Phone number:   </th>
+         <td><input type="number" name='number' placeholder="Your Contact number" required></td>
+       </tr>
+    </table><br>
+  <a id="forgot" href="#">Forgot Password ..?</a><br><br>
+  <span>
+      <input type="submit" name="button" value="Submit" style="border-radius:0px;border:3px solid black;">
+  </span><br><p>Or<br><br>Login with Google<br><br><img src="html images/google.jpg" width="50px" height="50px" style="border-radius:15px;">
+  <p>Don't have an account ? </p>
+  <a id="signup" href="sign up.html" target="_blank"> Sign up here
+  </a>
+  <br><br><br><br><br>
+  <a href="#"><img src="html images/insta.jpg" width='50px' height='50px' style="border-radius:15px;"></a>&nbsp&nbsp&nbsp&nbsp
+  <a href="#"><img src="html images/facebook.jpg" width="50px" height='50px' style="border-radius:15px;"></a>&nbsp&nbsp&nbsp&nbsp
+  <a href="#"><img src="html images/twitter.jpg" width="50px" height='50px' style="border-radius:15px;"></a>
+  </table>
+</form>
+</body>
 </html>
