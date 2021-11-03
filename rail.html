@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Booking page</title>
+</head>
+<body align="center">
+  <style>
+    body{
+      background-image:url('../html images/rail2.jpg');
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      font-style:italic;
+      background-position:fixed;
+    }
+    </style>
+    <h2>Application Form</h2><hr color='black'><br><br>
+
+<table height=40% width= 25% align=center border="4">
+    <form action="index.html" method="post">
+      <tr><th>Applicant Name</th><td><input type="text" name="appl" placeholder="Your name"></td></tr>
+      <tr><th>From: </th><td><input type="text" name="from" placeholder="From place"></td></tr><br>
+        <tr><th>To:  </th><td><input type="text" name="to" placeholder="To place"></td></tr><br>
+        <tr><th>Age: </th><td><input type="number" name="age" placeholder="Enter your age"></td></tr><br>
+        <tr><th>D.O.B : </th> <td><input type="date" name="dob" ></td></tr>
+
+        <tr><th>Class  :</th><td><select  name="class">
+          <option value="Sleep">--Select--</option>
+          <option value="Sleeper">Sleeper Class</option>
+          <option value="AC">AC Class</option>
+          <option value="First">First Class</option>
+          <option value="Second">Second Class</option>
+
+        </select></td></tr>
+        <tr><th> Categories  :</th><td><select name="categoires">
+          <option value="Sleep">--Select--</option>
+          <option value="Ladies">Ladies</option>
+          <option value="Lower">Lower Berth</option>
+          <option value="Tatkal">Tatkal</option>
+          <option value="Premium ">Premium Tatkal</option>
+        </select></td></tr>
+
+    </form>
+  </table><br><br>
+
+  <span style="border:2px solid black"><a href="railfinal.html"><input type="submit" name="submit" value="Submit"></a></span><br><br>
+  <input type="button" name="button" value="Click here to book District Trains">
+
+</body>
+
+
+</html>
